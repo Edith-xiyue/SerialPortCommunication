@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--        <Button-->
+    <!--            android:id="@+id/history"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:text="环境数据"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintRight_toRightOf="parent"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginRight="10dp"/>-->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:id="@+id/main_recyclerView"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginBottom="27.0px"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/info_layout"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/info_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/humidity"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/illumination"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/illuminance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_serial"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:text="串口号:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_serial"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_serial" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_serial"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:layout_marginBottom="27.0px"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/sp_databits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_serial" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_baudrate"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:text="波特率:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_serial"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/sp_serial"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_serial" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_baudrate"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="27.0px"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_serial"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_baudrate"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_serial" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_databits"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:text="数据位:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_databits"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_databits" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_databits"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:layout_marginBottom="27.0px"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/sp_stopbits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_databits" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_parity"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:text="校验位:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_databits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/sp_databits"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_databits" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_parity"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="27.0px"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_databits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_parity"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_databits" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_stopbits"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:text="停止位:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_stopbits"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_stopbits" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_stopbits"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:layout_marginBottom="27.0px"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/btn_open"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_stopbits" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tv_flowcon"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="27.0px"-->
+    <!--        android:gravity="right"-->
+    <!--        android:text="    流控:"-->
+    <!--        android:textColor="#000"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_stopbits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/sp_stopbits"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_stopbits" />-->
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/sp_flowcon"-->
+    <!--        android:layout_width="337.5px"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="27.0px"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/sp_stopbits"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/tv_flowcon"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/sp_stopbits" />-->
+
+
+    <LinearLayout
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/address_info_layout">
+
+        <TextView
+            android:id="@+id/people_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/pir_not_detected_str"
+            android:textColor="@color/holo_red_dark"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/LED_state"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/led_close"
+            android:textColor="@color/holo_red_dark"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/address_info_name_str"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/address_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/address_name_input_hint"
+            android:textColorHint="@color/lighter_gray"
+            android:digits="0123456789abcdefABCDEF"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/address_info_command_str"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/address_command"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_sda_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27.0px"
+            android:layout_marginBottom="27.0px"
+            android:layout_weight="1"
+            android:text="@string/bt_sda_switch_open_str"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btn_led_switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27.0px"
+            android:layout_marginBottom="27.0px"
+            android:layout_weight="1"
+            android:text="@string/bt_led_switch_open_str"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btn_send_hex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27.0px"
+            android:layout_marginBottom="27.0px"
+            android:layout_weight="1"
+            android:text="@string/bt_send_hex_str"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

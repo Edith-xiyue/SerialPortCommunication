@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SDADemo</string>
+    <string name="temperature">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="illumination">Light intensity:</string>
+    <string name="time">Time:</string>
+    <string name="setting"></string>
+    <string name="setting_dialog_btn_str">Update</string>
+    <string name="not_get_led_status">The LED status was not obtained</string>
+    <string name="btn_toggle_led_str">Switch the LED status</string>
+    <string name="bt_sda_switch_open_str">Open the serial port</string>
+    <string name="bt_sda_switch_close_str">Close the serial port</string>
+    <string name="toast_sda_close_str">Please open the serial port first.</string>
+    <string name="toast_address_name_is_worning">Please enter the complete 4-bit hexadecimal hardware address code.</string>
+    <string name="address_name_input_hint">4-bit hexadecimal address code.</string>
+    <string name="usb_not_found">USB serial port not plugged in.</string>
+    <string name="pir_time">PIR Time:</string>
+    <string name="bt_led_switch_open_str">Open LED</string>
+    <string name="bt_led_switch_close_str">Close LED</string>
+    <string name="bt_send_hex_str">Send HEX</string>
+    <string name="led_open">The LED light is on</string>
+    <string name="led_close">The LED lights are off</string>
+    <string name="address_info_mode_str">Address Mode:</string>
+    <string name="address_info_name_str">Target Address:</string>
+    <string name="address_info_command_str">Command:</string>
+    <string name="no_read_data">No data received.</string>
+    <string name="pir_not_detected_str">No body wobbles were detected.</string>
+    <string name="pir_detected_str">Human movement detected.</string>
+    <string name="no_data_was_retrieved">No data was retrieved</string>
+    <string name="log_original_data_str">Original data:</string>
+</resources>

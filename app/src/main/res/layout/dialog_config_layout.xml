@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/head_tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_info_name_str"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/input_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/head_tx"
+        android:digits="ABCDEFabcdef0123456789"
+        android:maxLength="4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/pir_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pir_time"
+        app:layout_constraintTop_toBottomOf="@+id/input_1"/>
+
+    <EditText
+        android:id="@+id/input_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:maxLength="4"
+        app:layout_constraintTop_toBottomOf="@+id/pir_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/setting_dialog_btn_str"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

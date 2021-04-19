@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SDADemo</string>
+    <string name="temperature">溫度：</string>
+    <string name="humidity">濕度：</string>
+    <string name="illumination">光照强度：</string>
+    <string name="time">當前時間：</string>
+    <string name="setting"></string>
+    <string name="setting_dialog_btn_str">更新</string>
+    <string name="not_get_led_status">未獲取到LED燈狀態</string>
+    <string name="btn_toggle_led_str">切換LED燈狀態</string>
+    <string name="bt_sda_switch_open_str">開啓串口</string>
+    <string name="bt_sda_switch_close_str">關閉串口</string>
+    <string name="toast_sda_close_str">請先開啓串口。</string>
+    <string name="toast_address_name_is_worning">請輸入完整的4位16進制地址碼。</string>
+    <string name="address_name_input_hint">4位16進制地址碼。</string>
+    <string name="usb_not_found">USB串口未插入。</string>
+    <string name="pir_time">PIR 時間：</string>
+    <string name="bt_led_switch_open_str">打開LED燈</string>
+    <string name="bt_led_switch_close_str">關閉LED燈</string>
+    <string name="bt_send_hex_str">發送HEX</string>
+    <string name="led_open">LED燈開啓</string>
+    <string name="led_close">LED燈關閉</string>
+    <string name="address_info_mode_str">地址碼：</string>
+    <string name="address_info_name_str">硬件地址碼：</string>
+    <string name="address_info_command_str">命令：</string>
+    <string name="no_read_data">沒有接收到數據。</string>
+    <string name="pir_not_detected_str">沒有偵測到人體晃動。</string>
+    <string name="pir_detected_str">偵測到人體晃動。</string>
+    <string name="no_data_was_retrieved">未獲取到數據</string>
+    <string name="log_original_data_str">原始數據：</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:text="@string/time"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:textColor="@color/black"
+        android:text="@string/temperature"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:textColor="@color/black"
+        android:text="@string/humidity"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:textColor="@color/black"
+        android:text="@string/illumination"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/illuminance"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
+

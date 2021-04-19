@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">SDADemo</string>
+    <string name="temperature">La température:</string>
+    <string name="humidity">L’humidité de l’air:</string>
+    <string name="illumination">Intensité lumineuse:</string>
+    <string name="time">Le temps:</string>
+    <string name="setting"></string>
+    <string name="setting_dialog_btn_str">Mise à jour</string>
+    <string name="not_get_led_status">Le statut de lampe à LED n’a pas été obtenu</string>
+    <string name="btn_toggle_led_str">Commutation de l’état de la lampe à LED</string>
+    <string name="bt_sda_switch_open_str">Ouvrez le port série</string>
+    <string name="bt_sda_switch_close_str">Fermez le port série</string>
+    <string name="toast_sda_close_str">Ouvrez le port série d’abord.</string>
+    <string name="toast_address_name_is_worning">Entrez le code d’adresse matériel complet à 4 bits.</string>
+    <string name="address_name_input_hint">Code d’adresse hexadécimal à 4 bits.</string>
+    <string name="usb_not_found">Port série USB non branché.</string>
+    <string name="pir_time">Heure du PIR:</string>
+    <string name="bt_led_switch_open_str">Allumer les lampes à LED</string>
+    <string name="bt_led_switch_close_str">Éteindre les lampes à LED</string>
+    <string name="bt_send_hex_str">Envoyez HEX</string>
+    <string name="led_open">Les lampes à LED sont allumées</string>
+    <string name="led_close">Les lampes à LED sont éteintes</string>
+    <string name="address_info_mode_str">Mode adresse:</string>
+    <string name="address_info_name_str">Adresse cible:</string>
+    <string name="address_info_command_str">Commande:</string>
+    <string name="no_read_data">Aucune donnée n’a été reçue.</string>
+    <string name="pir_not_detected_str">Aucun mouvement n’a été détecté.</string>
+    <string name="pir_detected_str">Mouvement humain détecté.</string>
+    <string name="no_data_was_retrieved">Aucune donnée n’est obtenue</string>
+    <string name="log_original_data_str">Données brutes:</string>
+</resources>
